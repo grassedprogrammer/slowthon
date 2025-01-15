@@ -1,7 +1,1 @@
-correct = 64
-print ('lets do some basic math! ')
-ans = input('whats 8x8?' )
-if ans = correct:
-print("you're correct!")
-else:
-print('wrong')
+correct = 64;ans = input('lets do some basic math!\nwhats 8x8?\n' );print("you're correct!")if int(ans) == correct else print('wrong!')
