@@ -1,0 +1,19 @@
+
+def compile_breadflock_line(code):
+    temp2 = 
+    var = False
+    temp = []
+    input = False
+    codebits = []
+    for i in str(code):codebits.append(i)
+    for i in codebits:
+        if i == "{":
+            var = True
+        elif var == True:
+            temp.append(i)
+        if i == ">": temp.append("input"); continue
+        if i == "[" and input == True:
+            temp.append("('")
+            while True:
+                if i == "]" or i == ";":
+                    temp.append("')")
